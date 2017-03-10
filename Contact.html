@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact me page">
+  <meta name="keywords" content="maps, social media, contact, message">
+
+  <title>Background</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+
+  h2 {
+    padding: 20px 25px 10px;
+    margin: 0;
+    color: #666;
+  }
+
+  #map {
+
+  }
+
+  #social {
+    background-color: #F2F2F2;
+  }
+
+  .logo {
+    width:80px;
+    padding: 5px 15px 30px;
+    margin: 5px;
+  }
+
+  form {
+    background-color: #EE5D5D
+  }
+
+  #h2msg {
+    color: #FFF;
+  }
+
+  .form-row {
+    margin: 10px 5px;
+    padding:5px;
+  }
+
+  .form-label {
+    width: 200px;
+    padding: 10px;
+    float: left;
+    color: #FFF;
+  }
+
+  #submit-btn {
+    padding: 5px 10px;
+    border: 0;
+    background-color: #FFF;
+  }
+
+  #submit-btn:hover {
+    box-shadow: 0 0 5px 2px #F2F2F2;
+    -webkit-box-shadow: 0 0 5px 2px #F2F2F2;
+    -moz-box-shadow: 0 0 5px 2px #F2F2F2;
+    -ms-box-shadow: 0 0 5px 2px #F2F2F2;
+    -o-box-shadow: 0 0 5px 2px #F2F2F2;
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>CONTACT ME</h1>
+  </header>
+
+  <div id="menu">
+    <nav>
+      <a href="Homepage.html">
+        <img id="home" src="img/home.png" alt="homebutton">
+      </a>
+
+      <ul>
+
+        <li>
+          <a href="">About Me</a>
+          <ul>
+            <li><a href="Background.html">Background</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+          </ul>
+        </li> <!--About Me-->
+
+        <li><a href="Resume.html">My Resume</a></li>
+
+        <li><a href="">Portfolio</a>
+          <ul>
+            <li><a href="Designs.html">Designs</a></li>
+            <li><a href="Presentations.html">Presentations</a></li>
+          </ul>
+        </li> <!--Design Portfolio-->
+
+        <li><a href="Contact.html">Contact me</a>
+          <ul>
+            <li><a href="Contact.html">Local Address</a></li>
+            <li><a href="Contact.html">Social Media</a></li>
+          </ul>
+        </li> <!--Contact-->
+      </ul>
+
+      <br style="clear:both;">
+
+    </nav> <!--Nav-->
+
+  </div> <!--Menu-->
+
+  <article>
+
+    <div id="map">
+      <h2>Where I'm located</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8386689538693!2d-118.28730032048692!3d34.02235188070901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7e49c71a5ed%3A0xaa905a5bb427a2c4!2sUniversity+of+Southern+California!5e0!3m2!1sen!2sus!4v1475872489779" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div> <!--map-->
+
+    <div id="social">
+      <h2>Connect with me</h2>
+
+      <a href="https://www.facebook.com/michelle.su.391">
+          <img src="img/fb.png" alt="FacebookLogo" class="logo">
+      </a>
+
+      <a href="https://www.linkedin.com/in/michelle-su-79a98aa6">
+        <img src="img/linkedin.png" alt="LinkedInLogo" class="logo">
+      </a>
+
+      <a href="https://instagram.com/michellev_su">
+        <img src="img/insta.png" alt="InstagramLogo" class="logo">
+      </a>
+
+      <a href="https://www.snapchat.com/add/mvsu21">
+        <img src="img/snapchat.png" alt="SnapchatLogo" class="logo">
+      </a>
+
+    </div> <!--social-->
+
+    <form action="http://www.usc.edu/cgi-bin/mail_form/michelvs@usc.edu" method="post">
+      <h2 id="h2msg">Send me a message!</h2>
+      <div class="form-row">
+        <label class="form-label" for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="form-row">
+        <label class="form-label" for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+
+      <div class="form-row">
+        <label class="form-label" for="msg">Message</label>
+        <textarea id="msg" name="msg"></textarea>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" id="submit-btn">Send</button>
+        <button type="reset" id="submit-btn">Clear</button>
+      </div>
+    </form>
+
+  </article> <!--article-->
+
+</body>
+</html>

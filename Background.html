@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="About me and my background">
+  <meta name="keywords" content="background, about me, life">
+
+  <title>Background</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+
+    h2 {
+      font-size: 36pt;
+      margin:0;
+    }
+
+    p {
+      color:#000;
+      padding: 20px 15px 10px;
+      background-color: rgba(255, 255, 255, .6);
+      display:block;
+      width:1000px;
+    }
+
+    #parallax-container {
+      width:100%;
+      height: 1500px;
+    }
+
+    #born {
+      color: #FFF;
+      padding: 30px;
+    }
+
+    #Taiwan {
+      background-color: rgba(255, 255, 255, .95);
+      padding: 30px;
+    }
+
+    #BayArea {
+      color: #FFF;
+      padding: 30px;
+    }
+
+    #USC {
+      background-color: rgba(255, 255, 255, .95);
+      padding: 30px;
+    }
+
+    #Future {
+      color: #FFF;
+      padding: 30px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>BACKGROUND</h1>
+  </header>
+
+  <div id="menu">
+    <nav>
+      <a href="Homepage.html">
+        <img id="home" src="img/home.png" alt="homebutton">
+      </a>
+
+      <ul>
+
+        <li>
+          <a href="">About Me</a>
+          <ul>
+            <li><a href="Background.html">Background</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+          </ul>
+        </li> <!--About Me-->
+
+        <li><a href="Resume.html">My Resume</a></li>
+
+        <li><a href="">Portfolio</a>
+          <ul>
+            <li><a href="Designs.html">Designs</a></li>
+            <li><a href="Presentations.html">Presentations</a></li>
+          </ul>
+        </li> <!--Design Portfolio-->
+
+        <li><a href="Contact.html">Contact me</a>
+          <ul>
+            <li><a href="Contact.html">Local Address</a></li>
+            <li><a href="Contact.html">Social Media</a></li>
+          </ul>
+        </li> <!--Contact-->
+      </ul>
+
+      <br style="clear:both;">
+
+    </nav> <!--Nav-->
+
+  </div> <!--Menu-->
+
+  <article>
+    <div id="parallax-container" data-parallax="scroll" data-image-src="img/bridge.jpg">
+
+      <div id="born">
+        <h2>I was born in Saratoga, California on August 9, 1997</h2>
+        <p>I have two older brothers, who have influenced me greatly in my life. As a result of being the "baby girl" of the family, since my brothers are 7 and 11 years older than me, I have been fortunate enough to receive much love. At the same time, such a big age gap made me become more independent at a younger age, since I quickly became the only sibling still living at home. As a result, I am more aware of the struggles my parents face and am even more committed now to always strive for success so I can one day repay them for all they have given me.</p>
+      </div> <!--born-->
+
+      <div id="Taiwan">
+        <h2>I am Taiwanese  American</h2>
+        <p>As the daughter of two first generation Taiwanese immigrants, I have grown up learning both Mandarin and English. I fully embrace my Taiwanese heritage and am proud to say that I can speak fluent Mandarin and am proficient in Taiwanese. Having had the opportunity to visit Taiwan for various purpose (family visits, travel, volunteering, even an internship), I can say that I have fully immersed myself in Taiwanese culture and take pride in the global perspective and cultural understanding I have gained.</p>
+      </div> <!--taiwan-->
+
+      <div id="BayArea">
+        <h2>Growing up in the Bay Area has given me a different perspective</h2>
+        <p>I have grown up my entire life in Saratoga, living in a technology bubble. My high school, Lynbrook High School, is one of the nation's top STEM schools. As someone who is naturally more drawn to creative, humanities-related academic subjects, it was sometimes difficult to reconcile my interests with the pressures around me. At the same time, I recognize that I am extremely privileged to have experienced so much innovation and STEM-related education. Realizing that I did not take full advantage of my resources growing up, I am now determined to complete a Web Techologies and Applications minor in the Information Technology Program here at USC.</p>
+      </div> <!--BayArea-->
+
+      <div id="USC">
+        <h2>USC has been a huge learning experience</h2>
+        <p>At USC, I have been pursuing a Business Administration major with a Web Technologies and Applications minor, with intention to declare a minor in Communication Design. Through my academic pursuits, I have found that I want to integrate my interests in business, modern technologies, and design to create a career and impact society. Outside of academics, I am heavily involved in the Asian Pacific American Student Assembly, Marshall Business Student Government, as well as Trogons A Cappella. I am also gaining valuable work experience designing graphics for Kaya Press, a non-profit publishing company that works with USC's PhD in Creative Writing Program. Learning to balance these different involvements while further exploring my interests has truly been an enriching part of my college experience so far.</p>
+      </div> <!--USC-->
+
+      <div id="Future">
+        <h2>Looking to the future</h2>
+        <p>With my USC degree, I hope to gain experience working for various clients and industries at a consulting firm. I also look forward to gaining international experience in my first few years of work. That way, I can better transition to a marketing function for a specific company in a location of choice after discovering which industries resonate with my interests and values. Eventually, I want to move back to the Bay Area to get involved with the startup culture, and more particularly, impact the renewable energy sector. After years of work experience, I plan to become a teacher to share my knowledge and help shape the new generation while maintaining a good work-life balance.</p>
+      </div> <!--Future-->
+
+    </div> <!-- #parallax-container -->
+
+  </article> <!--article-->
+
+  <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <!-- Import JS file for parallax-->
+	<script src="parallax/parallax.js"></script>
+
+	<!--start parallax-->
+	<script>
+		$('#parallax-container').parallax({imageSrc: 'img/bridge.jpg'});
+	</script>
+
+</body>
+</html>
