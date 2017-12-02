@@ -9,6 +9,7 @@
   <title>Hobbies</title>
 
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
   <style>
 
@@ -16,7 +17,7 @@
       font-size: 36pt;
       margin:0;
       padding: 5px 10px;
-      color: #EE5D5D;
+      color: #e06c6c;
     }
 
     h2:hover {
@@ -37,10 +38,9 @@
       color:#666;
     }
 
-    video {
-      width: 400px;
+    iframe {
       float: right;
-      padding: 10px;
+      padding: 20px;
     }
 
     .design {
@@ -72,41 +72,34 @@
 
   <div id="menu">
     <nav>
-      <a href="index.html">
-        <img id="home" src="img/home.png" alt="homebutton">
-      </a>
+    <a href="Homepage.html">
+      <img id="home" src="img/home.png" alt="homebutton">
+    </a>
 
-      <ul>
+    <ul>
+      <li>
+        <span class="menuButton">About Me</span>
+        <ul>
+          <li><a class="menuButton" href="Background.html">Background</a></li>
+          <li><a class="menuButton" href="Hobbies.html">Hobbies</a></li>
+        </ul>
+      </li> <!--About Me-->
 
-        <li>
-          <a href="">About Me</a>
-          <ul>
-            <li><a href="Background.html">Background</a></li>
-            <li><a href="Hobbies.html">Hobbies</a></li>
-          </ul>
-        </li> <!--About Me-->
+      <li><a class="menuButton" href="Resume.html">My Resume</a></li>
 
-        <li><a href="Resume.html">My Resume</a></li>
+      <li>
+        <span class="menuButton">Portfolio</span>
+        <ul>
+          <li><a class="menuButton" href="Designs.html">Designs</a></li>
+          <li><a class="menuButton" href="Projects.html">Projects</a></li>
+        </ul>
+      </li> <!--Design Portfolio-->
 
-        <li><a href="">Portfolio</a>
-          <ul>
-            <li><a href="Designs.html">Designs</a></li>
-            <li><a href="Presentations.html">Presentations</a></li>
-          </ul>
-        </li> <!--Design Portfolio-->
+      <li><a class="menuButton" href="Contact.html">Contact me</a></li> <!--Contact-->
+     </ul>
 
-        <li><a href="Contact.html">Contact me</a>
-          <ul>
-            <li><a href="Contact.html">Local Address</a></li>
-            <li><a href="Contact.html">Social Media</a></li>
-          </ul>
-        </li> <!--Contact-->
-      </ul>
-
-      <br style="clear:both;">
-
-    </nav> <!--Nav-->
-
+    <br style="clear:both;">
+   </nav> <!--Nav-->
   </div> <!--Menu-->
 
   <article>
@@ -121,16 +114,14 @@
         <li>Once I got to college, I decided to deepen my interest in singing by joining Trogons A Cappella.</li>
         </ul>
 
-      <video controls>
-        <source src="vid/trogons.mov">
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RTDp0Z2WvCs" frameborder="0" allowfullscreen></iframe>
 
       <br style="clear:both;">
 
     </div> <!--Music-->
 
     <div id="art">
-      <h2>Art&Design</h2>
+      <h2>Art & Design</h2>
       <em class="sub">After learning how to use Adobe Creative Cloud software in high school journalism, my interest in art developed into a passion for digital design.</em>
 
       <img src="img/ps.png" class="design" alt="PhotoshopLogo">

@@ -10,18 +10,19 @@
 		<title>Resume</title>
 
 	  <link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
 	<style>
 
-		article {
-			border: 1px dashed #EE5D5D;;
+		#outercontainer {
+			border: 1px dashed #e06c6c;
 			margin: 30px;
 		}
 
 		#headshot {
 			width:130px;
 			float:right;
-			padding: 10px 50px 0 0;
+			padding: 10px 40px 0 0;
 		}
 
 		#contact {
@@ -40,9 +41,8 @@
 		}
 
 		h3 {
-			margin:15px 0 20px;
 			font-size:20pt;
-			color: #EE5D5D;
+			color: #e06c6c;
 		}
 
 		h4 {
@@ -52,6 +52,7 @@
 
 		p {
 			margin-top: 5px;
+			margin-left: 15px;
 			color: #666;
 		}
 
@@ -69,23 +70,24 @@
 			padding-right:20px;
 		}
 
+		#experienceHead {
+			padding: 10px;
+			background-color: #F2F2F2;
+			height:40px;
+		}
+
 		#experience {
 			padding: 10px;
 			background-color: #F2F2F2;
 		}
-		
-		#leadership {
-			padding: 10px;
-			background-color: #F2F2F2;
-		}
-		
-		#it {
-			width: 90px;
-			float:right;
-			padding-right: 35px;
-		}
-		
+
 		#iwc {
+			width:100px;
+			float:right;
+			padding-right:35px;
+		}
+
+		#intertrend {
 			width:100px;
 			float:right;
 			padding-right:35px;
@@ -118,6 +120,43 @@
 			float:right;
 		}
 
+		#buttons {
+			text-align:center;
+		}
+
+		.button {
+			background-color: #e06c6c;
+			border-radius:1px;
+			border: none;
+			color: white;
+			text-align: center;
+			font-size: 18pt;
+			font-family: 'Montserrat Light', sans-serif;
+			padding: 8px 12px 8px 12px;
+			margin:15px;
+		}
+
+		.button:hover {
+			box-shadow: 3px 3px 3px grey;
+			background-color: #F2F2F2;
+			color: grey;
+		}
+
+		#header {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16pt;
+			text-align: center;
+			margin-top: 15px;
+			color: #e06c6c;
+		}
+
+		.images {
+			width: 90px;
+			margin: 10px;
+			float:right;
+			margin-right: 15px;
+		}
+
 	</style>
 	</head>
 
@@ -129,34 +168,31 @@
 
 		<div id="menu">
 			<nav>
-				<a href="index.html">
+				<a href="Homepage.html">
 					<img id="home" src="img/home.png" alt="homebutton">
 				</a>
 
 				<ul>
 
 					<li>
-						<a href="">About Me</a>
+						<span class="menuButton">About Me</span>
 						<ul>
-							<li><a href="Background.html">Background</a></li>
-							<li><a href="Hobbies.html">Hobbies</a></li>
+							<li><a class="menuButton" href="Background.html">Background</a></li>
+							<li><a class="menuButton" href="Hobbies.html">Hobbies</a></li>
 						</ul>
 					</li> <!--About Me-->
 
-					<li><a href="Resume.html">My Resume</a></li>
+					<li><a class="menuButton" href="Resume.html">My Resume</a></li>
 
-					<li><a href="">Portfolio</a>
+					<li>
+						<span class="menuButton">Portfolio</span>
 						<ul>
-							<li><a href="Designs.html">Designs</a></li>
-							<li><a href="Presentations.html">Presentations</a></li>
+							<li><a class="menuButton" href="Designs.html">Designs</a></li>
+							<li><a class="menuButton" href="Projects.html">Projects</a></li>
 						</ul>
 					</li> <!--Design Portfolio-->
 
-					<li><a href="Contact.html">Contact me</a>
-						<ul>
-							<li><a href="Contact.html">Local Address</a></li>
-							<li><a href="Contact.html">Social Media</a></li>
-						</ul>
+					<li><a class="menuButton" href="Contact.html">Contact me</a>
 					</li> <!--Contact-->
 				</ul>
 
@@ -166,20 +202,15 @@
 
 		</div> <!--Menu-->
 
-		<article>
+		<div id="outercontainer">
 
-			<img src="img/Headshot2.jpg" alt="Headshot" id="headshot">
-
-			<h2>Michelle Su</h2>
-
-			<div id="contact">1015 W 34th St., Los Angeles, CA 90007
-				<br>
-				(408) 318-8012
-				<br>
-				michelvs@usc.edu
-
-				<br style="clear: both;">
-			</div> <!--contact-->
+			<p id="header">Click to view my work experiences!</p>
+			<div id="buttons">
+				<button class="button" id="consultingButton">CONSULTING</button>
+				<button class="button" id="marketingButton">MARKETING</button>
+				<button class="button" id="designButton">DESIGN</button>
+				<button class="button" id="strategyButton">STRATEGY</button>
+			</div> <!--buttons-->
 
 			<hr>
 
@@ -193,8 +224,6 @@
 			  	Marshall School of Business, <em>Bachelor of Science in Business</em>
 					<br>
 					Minor in Web Technologies and Applications
-					<br>
-					Minor in Communication Design
 				</p>
 
 				<p>
@@ -207,140 +236,115 @@
 
 			</div> <!--education-->
 
-			<div id="experience">
+			<div id="experienceHead">
 				<h3>EXPERIENCE</h3>
+			</div> <!--experienceHead-->
 
-				<img src="img/it-logo.png" alt="IT" id="it">
+			<div id="experience">
+					<img src="img/intertrend.jpg" alt="interTrend" id="intertrend">
 
-				<a href="http://www.intertrend.com/">
-					<h4>interTrend Communications</h4>
-				</a>
+					<a href="https://www.intertrend.com"><h4>interTrend Communications</h4>
+					</a>
 
-				<p>
-					Strategy and Planning Intern, June 2017-Present
-					<br>
-					<em>Long Beach, CA</em>
-				</p>
+					<p>
+						Strategy and Engagement Planning Intern, Summer 2017
+						<br>
+						<em>Long Beach, CA</em>
+					</p>
 
-				  <ul>
-					<li>Strategizing new product launch plan and digital ad campaign for men's skincare brand using analysis from primary and secondary research.</li>
-					<li>Developing marketing and rebranding plan for downtown Los Angeles restaurant through conducting social listening, establishing college partnerships, and analyzing social trends.</li>
-				  </ul>
-				
-				<img src="img/kaya.png" alt="Kaya" id="kaya">
+				  	<ul>
 
-				<a href="http://www.kaya.com">
-					<h4>Kaya Press</h4>
-				</a>
+				    	<li>Strategized new product launch plan and digital ad campaign for fast-growth men's skincare brand using primary and secondary research analysis gathered from leading focus groups and surveys</li>
+							<li>Aggregated and analyzed data to report on competitor landscape, social listening analysis, and industry trends for a downtown Los Angeles quick service restaurant’s marketing and rebranding plan</li>
+							<li>Identified and synthesized best practices of emerging social media platforms for industry-leading automaker's user experience enhancement campaigns</li>
+				  	</ul>
 
-				<p>
-					Publicity and Events Intern, February 2016-Present
-					<br>
-					<em>Los Angeles, CA</em>
-				</p>
+					<img src="img/iwc.png" alt="IWC" id="iwc">
 
-				  <ul>
-					<li>Designing digital and print promotional materials for Asian American writers’ events and book publishing events, including the Association of Writing Program Conference and L.A. Times Festival of Books.</li>
-					<li>Building a brand identity as a creative, indie publishing company in the Los Angeles area through adapting design styles for different book genres and event types.</li>
-				  </ul>
+					<a href="https://www.richemont.com/"><h4>Richemont Asia Pacific Limited, IWC Schaffhausen Taiwan Branch</h4></a>
+					<p>
+						Digital Media Marketing and Analytics Intern, Summer 2016
+						<br>
+						<em>Taipei, Taiwan</em>
+					</p>
 
-				<img src="img/iwc.png" alt="IWC" id="iwc">
+				  	<ul>
+				    	<li>Analyzed competitors’ social media strategies to present weekly trend updates and curate promotional content for growing the brand’s 6% engagement rate, reaching 380,000 followers</li>
+							<li>Conducted in-language research and site visits to develop status reports on brand’s distribution channels and CRM strategies in luxury watch retail stores and brand-specific boutiques</li>
+							<li>Assisted with visual merchandising for IWC's Taipei 101 boutique and promotional event-planning for VIP customers and media</li>
+				  	</ul>
 
-				<a href="https://www.richemont.com/">
-					<h4>Richemont Asia Pacific Limited, IWC Schaffhausen Taiwan Branch</h4>
-				</a>
+					<img src="img/kaya.png" alt="Kaya" id="kaya">
 
-				<p>
-					Digital Media Marketing and Analytics Intern, Summer 2016
-					<br>
-					<em>Taipei, Taiwan</em>
-				</p>
+					<a href="http://www.kaya.com">
+						<h4>Kaya Press</h4>
+					</a>
 
-				  <ul>
-				    <li>Analyzed social media marketing’s influence on luxury goods consumers to present weekly reports on region-specific utilization of trending social media platforms.</li>
-				    <li>Strategized social media campaigns increasing the reach to a female target market by utilizing Facebook Insights and Power Editor advertising and engagement tracking software.</li>
-				    <li>Applied findings from social media marketing trends to curate promotional content for growing the brand’s 6% engagement rate reaching 380,000 followers through photo shoots and social media posts.</li>
+					<p>
+						Publicity and Events Intern, February 2016-Present
+						<br>
+						<em>Los Angeles, CA</em>
+					</p>
 
-				  </ul>
-				
-			</div> <!--experience-->
-			
-			<div id="leadership">
-				<h3>LEADERSHIP & INVOLVEMENT</h3>
-				<img src="img/apasa.png" alt="APASA" id="apasa">
+				 	<ul>
+				   	<li>Enhancing brand presence and audience reach in Los Angeles book publishing space by diversifying publicity tactics and promotional designs to match different event types and book genres</li>
+						<li>Managing partnerships with university departments and local vendors in planning literary events with 50-200 in attendance, including USC Visions & Voices and the L.A. Times Festival of Books</li>
+				 	</ul>
 
-				<a href="http://www.uscapasa.com">
-					<h4>USC Asian Pacific American Student Assembly</h4>
-				</a>
+					<img src="img/mbsg.png" alt="MBSG" id="mbsg">
 
-				<p>Executive Director, Past Events Coordinator Fall 2015-Present</p>
+					<a href="http://www.scmbsg.org">
+						<h4>Marshall Business Student Government</h4>
+					</a>
 
-				<ul>
-				  <li>Leading a team of 15 to create programming for 700+ students with budgets up to $17,000 in collaboration with student and community organizations as well as local and international talent.</li>
-				  <li>Representing over 20% of undergraduate student body as an elected member of student government.</li>
-				</ul>
-
-				<h4>2nd in Region, Deloitte R.I.S.E. Advisory Case Competition</h4>
-
-				<p>Team Competitor March 2017</p>
-
-				<ul>
-				  <li>Identified risks and strategies relating to geographic expansion and regulatory & compliance issues and provided comprehensive response to Request for Proposal outlining key takeaways.</li>
-				</ul>
-		
-				<h4>PwC Challenge Case Competition</h4>
-
-				<p>Team Competitor October 2016</p>
-
-				<ul>
-				  <li>Developed a framework for comparing alternatives, analyzing financial data, and compiling results to provide a profitable and strategic recommendation within 1 week.</li>
-				</ul>
-				
-				<img src="img/mbsg.png" alt="MBSG" id="mbsg">
-
-				<a href="http://www.scmbsg.org">
-					<h4>Marshall Business Student Government</h4>
-				</a>
-				
-				<p>Director of Marketing, Associate, Fall 2015-December 2016</p>
+					<p>Director of Marketing, Associate, Fall 2015-Present</p>
 
 				  <ul>
-				    <li>Managed Facebook campaigns and designed promotional materials for professional events and recruitment.</li>
-				    <li>Streamlined website and rebranded overall graphic identity to better reflect the student government’s mission and provide easier access to resources.</li>
-
-				    <li>Coordinated and assisted with Marshall-wide events for recruiter informational sessions, Marshall Career Advantage Program events, and a weeklong professional development event with Boeing</li>
-				  </ul>
-				
-			</div> <!--leadership-->
-
-			<div id="skills">
-
-				<h3>SKILLS</h3>
-
-				<img src="img/adobe.png" alt="Adobe Logo" id="adobe">
-
-				<h4>Adobe Creative Cloud:</h4>
-				  <ul>
-				    <li>Photoshop - Proficient</li>
-				    <li>Illustrator - Intermediate</li>
-				    <li>InDesign - Elementary</li>
-				    <li>HTML/CSS - Elementary</li>
-				    <li>Sketch - Elementary</li>
+				   	<li>Design digital promotional materials and social media campaigns for professional events and recruitment</li>
+						<li>Coordinate 	and assist with Marshall-wide events for recruiter informational sessions, Marshall Career Advantage Program events, and a weeklong professional development event with Boeing</li>
 				  </ul>
 
-				<h4>Languages:</h4>
-				  <ul>
-				    <li>English - Native</li>
-				    <li>Mandarin Chinese - Native</li>
-				    <li>French - Limited Working Proficiency</li>
-				    <li>Taiwanese - Elementary</li>
-				  </ul>
+					<img src="img/apasa.png" alt="APASA" id="apasa">
 
-				<hr>
+					<a href="http://www.uscapasa.com">
+						<h4>USC Undergraduate Student Government</h4>
+					</a>
 
-			</div> <!--skills-->
+					<p>Executive Director of Asian Pacific American Student Assembly, Fall 2015-Present</p>
+					<ul>
+				 	<li>Leading a team of 28 to create programming for 700+ students, managing a $75,000 budget, and fostering collaboration with student and community organizations, local businesses, and mid to high-profile talent</li>
+				</ul>
+			</div> <!--experience-->
 
-		</article> <!--article-->
+				<div id="skills">
+						<h3>SKILLS</h3>
+
+						<img src="img/adobe.png" alt="Adobe Logo" id="adobe">
+
+						<h4>Adobe Creative Cloud:</h4>
+				  	<ul>
+				    	<li>Photoshop - Proficient</li>
+				    	<li>Illustrator - Intermediate</li>
+				    	<li>InDesign - Elementary</li>
+				  	</ul>
+
+						<h4>Languages:</h4>
+				  	<ul>
+				    	<li>English - Native</li>
+				    	<li>Mandarin Chinese - Native</li>
+				    	<li>French - Limited Working Proficiency</li>
+				    	<li>Taiwanese - Elementary</li>
+				  	</ul>
+
+						<hr>
+
+				</div> <!--skills-->
+
+		</div> <!--outercontainer-->
+
+		<script src="jquery-3.2.1.min.js"></script>
+
+		<script src="resumeLoop.js"></script>
 
 	</body>
 
