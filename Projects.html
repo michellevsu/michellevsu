@@ -115,7 +115,7 @@
 
   	<div id="menu">
   		<nav>
-  		<a href="index.html">
+  		<a href="Homepage.html">
   			<img id="home" src="img/home.png" alt="homebutton">
   		</a>
 
@@ -289,6 +289,26 @@
       <button id="deloitteButton" class="button">I want to learn more!</button>
     </div> <!--deloitte-->
 
+    <div id="fresh">
+      <h2>FRESH – Pantry Management App UX Design</h2>
+      <em><h4>ITP 300 User Experience Design Class Project</h4></em>
+      <strong><p class="nutshell">In a Nutshell</p></strong>
+
+        <ul class="nutshellBullet">
+          <li>Developed wireframes for new pantry management app concept in team of 4 students, Spring 2017.</li>
+          <li>Ideated and re-iterated based on user research, following the design thinking process.</li>
+        </ul>
+
+      <div id="freshSlide">
+        <div class="recommendations">
+          <h3>FINAL PRESENTATION</h3>
+          <iframe src="https://drive.google.com/file/d/0B7VgFZNMunwSbjc3OV8zUkt4d1E/preview" width="640" height="480"></iframe>
+          <hr>
+        </div> <!--recommendations-->
+
+      <button id="freshButton" class="button">I want to learn more!</button>
+    </div> <!--fresh-->
+
     <hr>
 
   </article> <!--article-->
@@ -307,6 +327,10 @@
 
   document.querySelector("#deloitteButton").onclick = function () {
     $("#deloitteSlide").slideToggle(1000);
+  };
+
+  document.querySelector("#freshButton").onclick = function () {
+    $("#freshSlide").slideToggle(1000);
   };
 
   </script>
