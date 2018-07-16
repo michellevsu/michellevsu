@@ -169,52 +169,6 @@
   <link rel="stylesheet" type="text/css" href="rotator/textrotator.css">
 
   <title>Michelle Su</title>
-
-	  
-  <script src="jquery-3.2.1.min.js"></script>
-  <script src="rotator/jquery.text-rotator.js"></script>
-  <script src="scrollify/jquery.scrollify.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-  <script>
-  $(document).ready(function(){
-	$(".rotate").textrotator({
-        animation: "flipUp",
-        speed: 1000
-      });
-	  
-  $(".rotate").textrotator({
-    animation: "flipUp",
-    separator: ",",
-    speed: 2800
-  });
-
-  $(function() {
-    $.scrollify({
-      section : ".landingDescription",
-    });
-  });
-
-  $.scrollify({
-  section : ".landingDescription",
-  sectionName : "section-name",
-  interstitialSection : "",
-  easing: "easeOutExpo",
-  scrollSpeed: 1700,
-  offset : 0,
-  scrollbars: true,
-  standardScrollElements: "",
-  setHeights: true,
-  overflowScroll: true,
-  updateHash: true,
-  touchScroll:true,
-  before:function() {},
-  after:function() {},
-  afterResize:function() {},
-  afterRender:function() {}
-});
-
-  </script>
 	
 </head>
 
@@ -252,4 +206,50 @@
 
 </body>
 
+	  	  
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="rotator/jquery.text-rotator.js"></script>
+  <script src="scrollify/jquery.scrollify.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+	$(".rotate").textrotator({
+        animation: "flipUp",
+	separator: ",",
+        speed: 1000
+      });
+	  
+  $(".rotate").textrotator({
+    animation: "flipUp",
+    separator: ",",
+    speed: 2800
+  });
+
+  $(function() {
+    $.scrollify({
+      section : ".landingDescription",
+    });
+  });
+
+  $.scrollify({
+  section : ".landingDescription",
+  sectionName : "section-name",
+  interstitialSection : "",
+  easing: "easeOutExpo",
+  scrollSpeed: 1700,
+  offset : 0,
+  scrollbars: true,
+  standardScrollElements: "",
+  setHeights: true,
+  overflowScroll: true,
+  updateHash: true,
+  touchScroll:true,
+  before:function() {},
+  after:function() {},
+  afterResize:function() {},
+  afterRender:function() {}
+});
+
+  </script>
 </html>
