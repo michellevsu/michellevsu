@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Michelle Su's Portfolio Homepage">
+  <meta name="keywords" content="portfolio, business, design, technology">
+
+  <style>
+    header {
+      background-image: url(img/Header.jpg);
+      height: 216px;
+      size:100%;
+      text-align:center;
+      font-family: "Gotham";
+    }
+
+    #menu {
+      background-color: #F2F2F2;
+      width:100%;
+      font-family: 'Gotham', 'Arial', sans-serif;
+    }
+
+    nav {
+      width:600px;
+      margin:auto;
+    }
+
+    nav ul {
+      list-style:none;
+    }
+
+    nav li {
+      float:left;
+      position:relative;
+    }
+
+    nav ul ul {
+      position:absolute;
+      top:50px;
+      left:0px;
+
+      visibility: hidden;
+    }
+
+    nav li:hover ul {
+      visibility: visible;
+    }
+
+    nav * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li a {
+      background-color: #F2F2F2;
+      color: #ED5656;
+      text-decoration: none;
+
+      display:block;
+      width:150px;
+      height:50px;
+      line-height:50px;
+      text-align:center;
+    }
+
+    nav li a:hover {
+      background-color: #EE5D5D;
+      color: #F2F2F2;
+    }
+
+    #la {
+      width:100%;
+      opacity:1;
+    }
+
+    #la:hover {
+      opacity:0.8;
+    }
+
+    #HI {
+      font-size: 60pt;
+    }
+
+    article {
+      background-color: #FFF;
+      color: #666;
+      height: 300px;
+      text-align:center;
+      font-family: 'Gotham', 'Arial', sans-serif;
+      font-size: 24pt;
+      padding:100px;
+
+      position:absolute;
+      top: 450px;
+      left: 100px;
+      right: 100px;
+
+      opacity:0.8;
+    }
+
+    #home {
+      height:30px;
+      position:absolute;
+      top:235px;
+      left: 40px;
+      opacity: 0.8;
+    }
+
+    #home:hover {
+      opacity:1;
+    }
+
+  </style>
+
+  <title>My Portfolio</title>
+
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <div id="menu">
+    <nav>
+      <a href="Homepage.html">
+        <img id="home" src="img/home.png" alt="homebutton">
+      </a>
+
+      <ul>
+
+        <li>
+          <a href="">About Me</a>
+          <ul>
+            <li><a href="Background.html">Background</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+          </ul>
+        </li> <!--About Me-->
+
+        <li><a href="Resume.html">My Resume</a></li>
+
+        <li><a href="">Portfolio</a>
+          <ul>
+            <li><a href="Designs.html">Designs</a></li>
+            <li><a href="Presentations.html">Presentations</a></li>
+          </ul>
+        </li> <!--Design Portfolio-->
+
+        <li><a href="Contact.html">Contact me</a>
+          <ul>
+            <li><a href="Contact.html">Local Address</a></li>
+            <li><a href="Contact.html">Social Media</a></li>
+          </ul>
+        </li> <!--Contact-->
+      </ul>
+
+      <br style="clear:both;">
+
+    </nav> <!--Nav-->
+
+  </div> <!--Menu-->
+
+  <div id="maincontent">
+
+    <img id="la" src="img/laskyline.jpg" alt="laskyline">
+
+    <article>
+      <span id="HI">HI!</span>
+
+      <p>My name is Michelle Su. I'm a sophomore majoring in Business Administration and minoring in Web Technologies and Applications at the University of Southern California. This is a collection of my professional skills, career goals, design portfolio, and interests. Click on one of the above tabs to get started!</p>
+    </article>
+
+  </div> <!--maincontent-->
+
+</body>
+
+</html>
