@@ -95,3 +95,7 @@ article {
 #home:hover {
   opacity:1;
 }
+@media (max-width: 992px) {
+		body {
+				width: 100%;
+		}
