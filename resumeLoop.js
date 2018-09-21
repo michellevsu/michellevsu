@@ -1,6 +1,18 @@
 
 		var experience = [
 			{
+				companyName: "Visa",
+				website: "https://www.developer.visa.com",
+				role: "Product Management Intern – Visa Developer Platform, Summer 2018",
+				location: "Foster City, CA",
+				image: "img/visa.png",
+				bullet1: "Analyzed platform data to build wireframes, requirements, and an execution plan for growing user acquisition from outside referrals by 30% and streamlining user support.",
+				bullet2: "Identified 100% drop in data collection from gap analysis and managed technology fix by working with technology and design teams in subsequent sprint.",
+				bullet3: "Led end-to-end logistics and promotional planning for TechCrunch hackathon sponsorship, garnering 20K+ landing page views, 22 project submissions, and over 20M social impressions.",
+				keywords:"marketing,strategy,consulting",
+			},
+			
+			{
 				companyName: "interTrend Communications",
 				website: "https://www.intertrend.com",
 				role: "Strategy and Engagement Planning Intern, Summer 2017",
