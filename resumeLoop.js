@@ -62,6 +62,7 @@
 
 			{
 				companyName: "PwC Challenge Case Competition",
+				website: "N/A",
 				role: "Team Competitor, October 2016",
 				location: "N/A",
 				image: "img/pwc.png",
@@ -73,6 +74,7 @@
 
 			{
 				companyName: "Deloitte R.I.S.E. Advisory Case Competition, 2nd in Region",
+				website: "https://michellevsu.github.io/Projects.html",
 				role:"Team Competitor, March 2017",
 				location: "N/A",
 				image:"img/deloitte.png",
