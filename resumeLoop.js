@@ -1,7 +1,7 @@
 
 		var experience = [
 			{
-				companyName: "Visa",
+				companyName: "Visa, Inc.",
 				website: "https://www.developer.visa.com",
 				role: "Product Management Intern – Visa Developer Platform, Summer 2018",
 				location: "Foster City, CA",
